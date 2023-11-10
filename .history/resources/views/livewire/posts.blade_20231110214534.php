@@ -1,5 +1,4 @@
 <div>
 {{--  @livewire('posts')
-  --}}
-  <p>Post Component</p>
+p     --}}
 </div>
