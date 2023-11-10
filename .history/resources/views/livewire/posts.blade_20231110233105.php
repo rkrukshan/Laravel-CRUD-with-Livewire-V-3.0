@@ -1,0 +1,4 @@
+<div>
+
+  @include("welcome")
+</div>
