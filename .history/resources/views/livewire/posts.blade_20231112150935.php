@@ -21,7 +21,7 @@
     <td><button type="button" class="btn btn-outline-info">Edit</button></td>
     <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
    </tr>
-   @endforeach
+   {{--  @endforeach  --}}
 
 </table>
 
