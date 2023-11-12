@@ -7,7 +7,7 @@
 
     <div class="form-group">
         <label for="body" class="form-label">Body</label>
-        <textarea type="text" name="body" id="body" class="form-control" cols="30" rows="10"></textarea>
+        <textarea type="email" name="body" id="body" class="form-control" cols="30" rows="10"></textarea>
     </div>
     <center>
         <button type="submit" class="btn btn-success">Save</button>
