@@ -44,7 +44,9 @@ class Posts extends Component
         ]);
         $post=Post::find($this->post_id);
         $post->update($validated_data);
-        session()->flash('alertmessageupdate','Updated Successfully');
+        session()->flash('update','updated');
+
+        session()->flash('alertmessage','Updated Successfully');
         $this->resetInputFields();
     }
     public function cancelUpdate()
@@ -56,7 +58,6 @@ class Posts extends Component
     {
         $post=Post::find($id);
         $post->delete();
-        session()->flash('alertmessagedelete','Deleted Successfully');
     }
     public function render()
     {

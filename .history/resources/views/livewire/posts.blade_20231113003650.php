@@ -1,16 +1,8 @@
 <div>
     @if(session()->has('alertmessage'))
-    <div class="alert alert-success"><h3 style="color: rgb(131, 129, 129)"><center>{{ session('alertmessage') }}
+    <div class="alert alert-success"><h3 style="color: rgb(81, 79, 79)"><center>{{ session('alertmessage') }}
         <hr>
         <h5 class="alert-heading">Your Information Successfully Saved in Our System</h5></center></h3></div>
-        @elseif(session()->has('alertmessageupdate'))
-        <div class="alert alert-info"><h3 style="color: rgb(116, 115, 115)"><center>{{ session('alertmessageupdate') }}
-            <hr>
-            <h5 class="alert-heading">Your Information Successfully updated in Our System</h5></center></h3></div>
-        @elseif(session()->has('alertmessagedelete'))
-    <div class="alert alert-danger"><h3 style="color: rgb(116, 115, 115)"><center>{{ session('alertmessagedelete') }}
-        <hr>
-        <h5 class="alert-heading">Your Information Successfully deleted from Our System</h5></center></h3></div>
     @endif
     @if($edit_mode)
     @include("livewire.edit")

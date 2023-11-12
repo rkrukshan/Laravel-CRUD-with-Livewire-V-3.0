@@ -6,7 +6,7 @@
         @elseif(session()->has('alertmessageupdate'))
         <div class="alert alert-info"><h3 style="color: rgb(116, 115, 115)"><center>{{ session('alertmessageupdate') }}
             <hr>
-            <h5 class="alert-heading">Your Information Successfully updated in Our System</h5></center></h3></div>
+            <h5 class="alert-heading">Your Information Successfully deleted from Our System</h5></center></h3></div>
         @elseif(session()->has('alertmessagedelete'))
     <div class="alert alert-danger"><h3 style="color: rgb(116, 115, 115)"><center>{{ session('alertmessagedelete') }}
         <hr>
