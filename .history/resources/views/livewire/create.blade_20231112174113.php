@@ -1,4 +1,4 @@
-<center><h3>Add Post</h3></center>
+
 <form>
     <div class="form-group">
         <label for="title" class="form-label">Title</label>
