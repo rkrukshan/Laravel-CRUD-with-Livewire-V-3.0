@@ -30,9 +30,7 @@ class Posts extends Component
 
     {
         $this->edit_mode=true;
-        $post=Post::find($id);
-        $this->title=$post->title;
-        $this->body=$post->body;
+        $this->
     }
     public function render()
     {
