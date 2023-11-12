@@ -20,7 +20,7 @@
     <td>{{ $post->title }}</td>
     <td>{{ $post->body }}</td>
     <td><button wire:click="edit({{ $post->id }})" type="button" class="btn btn-outline-info">Edit</button></td>
-    <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    <td><button wire:click="canceledit()" type="button" class="btn btn-outline-danger">Delete</button></td>
    </tr>
    @endforeach
 </table>
