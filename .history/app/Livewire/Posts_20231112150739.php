@@ -28,7 +28,7 @@ class Posts extends Component
 
     public function render()
     {
-        $this->posts=Post::all();
+        $this->posts
         return view('livewire.posts');
     }
 }

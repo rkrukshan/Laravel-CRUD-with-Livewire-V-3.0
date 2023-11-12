@@ -13,7 +13,6 @@
     <th>Body</th>
     <th>Action</th>
    </tr>
-{{--  @foreach($posts as $post)  --}}
    <tr>
     <td>id</td>
     <td>title</td>
@@ -21,7 +20,7 @@
     <td><button type="button" class="btn btn-outline-info">Edit</button></td>
     <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
    </tr>
-   {{--  @endforeach  --}}
+   @endforeach
 
 </table>
 
