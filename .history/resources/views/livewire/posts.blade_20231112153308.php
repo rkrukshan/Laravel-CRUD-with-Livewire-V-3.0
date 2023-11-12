@@ -4,7 +4,7 @@
         <hr> <h5 class="alert-heading">Your Information Successfully Saved in Our System</h5></center></h3></div>
     @endif
   @include("livewire.create")
-  @include("livewire.edit")
+  @include("livewire.create")
 
 <hr>
 <table class=" table table-responsive">
