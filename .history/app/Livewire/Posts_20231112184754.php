@@ -44,13 +44,10 @@ class Posts extends Component
         ]);
         $post=Post::find($this->post_id);
         $post->update($validated_data);
-        session()->flash('alertmessage','Updated Successfully');
-        $this->resetInputFields();
+        session()->flash('message','Updated Successfully');
     }
     public function cancelUpdate()
-    {
-        $this->edit_mode=false;
-    }
+    
     public function render()
     {
         $this->posts=Post::all();

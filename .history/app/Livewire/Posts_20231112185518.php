@@ -36,7 +36,7 @@ class Posts extends Component
         $this->body=$post->body;
         $this->post_id=$id;
     }
-    public function update()
+    public function update($id)
     {
         $validated_data=$this->validate([
             'title'=>'required',

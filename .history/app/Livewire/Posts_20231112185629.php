@@ -44,7 +44,7 @@ class Posts extends Component
         ]);
         $post=Post::find($this->post_id);
         $post->update($validated_data);
-        session()->flash('alertmessage','Updated Successfully');
+        session()->flash('message','Updated Successfully');
         $this->resetInputFields();
     }
     public function cancelUpdate()

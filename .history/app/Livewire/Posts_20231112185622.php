@@ -10,7 +10,7 @@ class Posts extends Component
     public $title,$body;
     public$posts;
     public $edit_mode=false;
-    public $post_id;
+    // public $post_id;
     public function store()
     {
         $validated_data=$this->validate([

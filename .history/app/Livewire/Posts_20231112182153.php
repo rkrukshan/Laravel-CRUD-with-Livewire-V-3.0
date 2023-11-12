@@ -10,7 +10,7 @@ class Posts extends Component
     public $title,$body;
     public$posts;
     public $edit_mode=false;
-    public $post_id;
+    public
     public function store()
     {
         $validated_data=$this->validate([
@@ -34,22 +34,6 @@ class Posts extends Component
         $post=Post::find($id);
         $this->title=$post->title;
         $this->body=$post->body;
-        $this->post_id=$id;
-    }
-    public function update()
-    {
-        $validated_data=$this->validate([
-            'title'=>'required',
-            'body'=>'required'
-        ]);
-        $post=Post::find($this->post_id);
-        $post->update($validated_data);
-        session()->flash('alertmessage','Updated Successfully');
-        $this->resetInputFields();
-    }
-    public function cancelUpdate()
-    {
-        $this->edit_mode=false;
     }
     public function render()
     {

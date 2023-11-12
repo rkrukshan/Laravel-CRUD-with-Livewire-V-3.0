@@ -10,7 +10,7 @@ class Posts extends Component
     public $title,$body;
     public$posts;
     public $edit_mode=false;
-    public $post_id;
+    // public $post_id;
     public function store()
     {
         $validated_data=$this->validate([
@@ -36,7 +36,7 @@ class Posts extends Component
         $this->body=$post->body;
         $this->post_id=$id;
     }
-    public function update()
+    public function update($id)
     {
         $validated_data=$this->validate([
             'title'=>'required',
