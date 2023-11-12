@@ -29,7 +29,7 @@ class Posts extends Component
     public function edit($id)
 
     {
-        $this->edit_mode=true;
+        $this->edit_mode==true;
     }
     public function render()
     {

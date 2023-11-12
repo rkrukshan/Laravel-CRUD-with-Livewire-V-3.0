@@ -9,7 +9,7 @@
         </h3>
     </div>
     @endif
-    @if($edit_mode)
+    @if(edit_mode)
     @include("livewire.edit")
     @else
     @include("livewire.create")

@@ -26,11 +26,10 @@ class Posts extends Component
         $this->title='';
         $this->body='';
     }
-    public function edit($id)
+    public function edit()
 
     {
-        $this->edit_mode=true;
-    }
+$this    }
     public function render()
     {
         $this->posts=Post::all();
