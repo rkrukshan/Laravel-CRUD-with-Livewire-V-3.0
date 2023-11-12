@@ -15,9 +15,9 @@
    </tr>
 @foreach($posts as $post)
    <tr>
-    <td>{{ $post->id }}</td>
-    <td>{{ $post->title }}</td>
-    <td>{{ $post->body }}</td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td><button type="button" class="btn btn-outline-info">Edit</button></td>
     <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
    </tr>
