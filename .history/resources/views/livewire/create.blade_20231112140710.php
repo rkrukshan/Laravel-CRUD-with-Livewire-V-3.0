@@ -4,8 +4,6 @@
         <label for="title" class="form-label">Title</label>
         <input wire:model='title' type="text" class="form-control" id="title" name="title">
         @error('title')
-        <span class="text-danger">{{ $message }}</span>
-
         @enderror
     </div>
 

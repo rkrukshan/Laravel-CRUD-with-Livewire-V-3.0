@@ -4,8 +4,7 @@
         <label for="title" class="form-label">Title</label>
         <input wire:model='title' type="text" class="form-control" id="title" name="title">
         @error('title')
-        <span class="text-danger">{{ $message }}</span>
-
+        <span class="text_danger">{{ $message }}</span>
         @enderror
     </div>
 
@@ -17,6 +16,6 @@
         @enderror
     </div>
     <center>
-        <button wire:click.prevent="store()" type="submit" class="btn btn-success">Save</button>
+        <button wire:click.preve="store()" type="submit" class="btn btn-success">Save</button>
     </center>
 </form>

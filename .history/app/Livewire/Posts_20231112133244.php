@@ -15,15 +15,13 @@ class Posts extends Component
             'body'=>"required"
         ]);
         Post::create($validated_data);
-        session()->flash('alertmessage','Saved Successfully');
-        $this->resetInputFields();
     }
 
-    private function resetInputFields()
-    {
-        $this->title='';
-        $this->body='';
-    }
+    // private function resetInputFields()
+    // {
+    //     $this->title='';
+    //     $this->body='';
+    // }
 
     public function render()
     {

@@ -15,7 +15,7 @@ class Posts extends Component
             'body'=>"required"
         ]);
         Post::create($validated_data);
-        session()->flash('alertmessage','Saved Successfully');
+        session()->flash('alertmessage')
         $this->resetInputFields();
     }
 

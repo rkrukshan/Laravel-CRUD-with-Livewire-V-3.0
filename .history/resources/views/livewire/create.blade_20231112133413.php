@@ -3,10 +3,9 @@
     <div class="form-group">
         <label for="title" class="form-label">Title</label>
         <input wire:model='title' type="text" class="form-control" id="title" name="title">
-        @error('title')
-        <span class="text-danger">{{ $message }}</span>
-
-        @enderror
+        {{--  @error('title')
+        <span class="text_danger">{{ $message }}</span>
+        @enderror  --}}
     </div>
 
     <div class="form-group">
@@ -17,6 +16,6 @@
         @enderror
     </div>
     <center>
-        <button wire:click.prevent="store()" type="submit" class="btn btn-success">Save</button>
+        <button wire:click="store()" type="submit" class="btn btn-success">Save</button>
     </center>
 </form>
