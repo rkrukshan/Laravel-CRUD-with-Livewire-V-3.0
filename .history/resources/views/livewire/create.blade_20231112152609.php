@@ -13,7 +13,7 @@
 
     <div class="form-group">
         <label for="body" class="form-label">Body</label>
-        <input type="text" wire:model='body' type="text" name="body" id="body" class="form-control" cols="30" rows="10">
+        <input type="text" wire:model='body' type="text" name="body" id="body" class="form-control" cols="30" rows="10"></input>
         <br>
         @error('body')
         <h5><span class="text-danger alert alert-danger d-flex align-items-center">{{ $message }}</span></h5>

@@ -1,7 +1,7 @@
 <div>
     @if(session()->has('alertmessage'))
-    <div class="alert alert-success"><h3 style="color: rgb(81, 79, 79)"><center>{{ session('alertmessage') }}
-        <hr> <h5 class="alert-heading">Your Information Successfully Saved in Our System</h5></center></h3></div>
+    <div class="alert-heading"><h3 style="color: rgb(81, 79, 79)"><center>{{ session('alertmessage') }}
+        <hr> h</center></h3></div>
     @endif
   @include("livewire.create")
 
