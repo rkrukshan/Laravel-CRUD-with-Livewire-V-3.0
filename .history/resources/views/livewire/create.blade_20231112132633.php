@@ -16,6 +16,6 @@
         @enderror
     </div>
     <center>
-        <button wire:click="store()" type="submit" class="btn btn-success">Save</button>
+        <button wire:click= type="submit" class="btn btn-success">Save</button>
     </center>
 </form>
