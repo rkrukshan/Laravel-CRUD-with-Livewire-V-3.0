@@ -16,7 +16,7 @@ class Posts extends Component
         ]);
         Post::create($validated_data);
     }
-    private  
+    private reset
     public function render()
     {
         return view('livewire.posts');

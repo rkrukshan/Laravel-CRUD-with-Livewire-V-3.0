@@ -2,7 +2,6 @@
 
 namespace App\Livewire;
 
-use App\Models\Post;
 use Livewire\Component;
 
 class Posts extends Component
@@ -14,9 +13,7 @@ class Posts extends Component
             'title'=>"required",
             'body'=>"required"
         ]);
-        Post::create($validated_data);
     }
-    private  
     public function render()
     {
         return view('livewire.posts');

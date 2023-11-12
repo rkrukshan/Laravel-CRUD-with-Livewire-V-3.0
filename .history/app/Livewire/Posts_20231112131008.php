@@ -16,7 +16,10 @@ class Posts extends Component
         ]);
         Post::create($validated_data);
     }
-    private  
+    private resetInputFields()
+    {
+        
+    }
     public function render()
     {
         return view('livewire.posts');
