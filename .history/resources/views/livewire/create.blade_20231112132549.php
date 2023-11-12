@@ -10,7 +10,7 @@
 
     <div class="form-group">
         <label for="body" class="form-label">Body</label>
-        <textarea wire:model='body' type="text" name="body" id="body" class="form-control" cols="30" rows="10"></textarea>
+        <textarea wire:model= type="text" name="body" id="body" class="form-control" cols="30" rows="10"></textarea>
         @error('body')
         <span class="text-danger">{{ $message }}</span>
         @enderror
