@@ -11,8 +11,8 @@
     <div class="form-group">
         <label for="body" class="form-label">Body</label>
         <textarea type="text" name="body" id="body" class="form-control" cols="30" rows="10"></textarea>
-        @error('body')
-        <span class="text-danger">{{ $message }}</span>
+        @error()
+
         @enderror
     </div>
     <center>
