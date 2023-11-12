@@ -17,11 +17,6 @@ class Posts extends Component
         Post::create($validated_data);
     }
 
-    private function resetInputFields()
-    {
-        $this->title='';
-        $this->body='';
-    }
 
     public function render()
     {

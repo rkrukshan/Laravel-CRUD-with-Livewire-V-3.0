@@ -20,7 +20,7 @@ class Posts extends Component
     private function resetInputFields()
     {
         $this->title='';
-        $this->body='';
+        $this->body
     }
 
     public function render()

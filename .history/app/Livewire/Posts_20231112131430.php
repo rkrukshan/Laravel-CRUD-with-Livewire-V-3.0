@@ -18,10 +18,6 @@ class Posts extends Component
     }
 
     private function resetInputFields()
-    {
-        $this->title='';
-        $this->body='';
-    }
 
     public function render()
     {
