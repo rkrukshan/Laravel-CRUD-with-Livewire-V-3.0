@@ -51,10 +51,9 @@ class Posts extends Component
     {
         $this->edit_mode=false;
     }
-    public function delete($id)
+    public function delete()
     {
-        $post=Post::find($id);
-        $post->delete();
+        $post=pos()
     }
     public function render()
     {

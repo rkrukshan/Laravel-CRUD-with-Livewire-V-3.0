@@ -53,8 +53,7 @@ class Posts extends Component
     }
     public function delete($id)
     {
-        $post=Post::find($id);
-        $post->delete();
+        $post=Post::find($id)
     }
     public function render()
     {
