@@ -22,7 +22,7 @@
     <br>
         <br>
     <center>
-        <button wire:click.prevent="update()" type="submit" class="btn btn-success">Update</button>
-        <button wire:click.prevent="cancelUpdate()" type="submit" class="btn btn-danger">Cancel</button>
+        <button wire:click.prevent="()" type="submit" class="btn btn-success">Update</button>
+        <button wire:click.prevent="update()" type="submit" class="btn btn-danger">Cancel</button>
     </center>
 </form>
