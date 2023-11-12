@@ -13,6 +13,7 @@
     <th>Body</th>
     <th>Action</th>
    </tr>
+   <hr>
 
    <tr>
     <td>id</td>
@@ -21,8 +22,6 @@
     <td><button type="button" class="btn btn-outline-info">Edit</button></td>
     <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
    </tr>
-
 </table>
-
 </div>
 

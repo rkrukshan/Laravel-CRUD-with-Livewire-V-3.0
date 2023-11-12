@@ -23,6 +23,7 @@
    </tr>
 
 </table>
+<hr>
 
 </div>
 

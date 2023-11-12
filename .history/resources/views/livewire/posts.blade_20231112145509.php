@@ -6,23 +6,19 @@
 
 <hr>
 <table class=" table table-responsive">
-
    <tr>
     <th>ID</th>
     <th>Title</th>
     <th>Body</th>
     <th>Action</th>
    </tr>
-
    <tr>
     <td>id</td>
     <td>title</td>
     <td>body</td>
-    <td><button type="button" class="btn btn-outline-info">Edit</button></td>
+    <td><button type="button" class="btn btn-outline-info"><style>:hover:</style>Edit</button></td>
     <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
    </tr>
-
 </table>
-
 </div>
 
