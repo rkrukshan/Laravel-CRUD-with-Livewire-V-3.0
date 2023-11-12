@@ -8,7 +8,7 @@ use Livewire\Component;
 class Posts extends Component
 {
     public $title,$body;
-    public$posts;
+    public$posts
     public function store()
     {
         $validated_data=$this->validate([
