@@ -7,8 +7,8 @@ use Livewire\Component;
 
 class Posts extends Component
 {
-    public $title,$body;
-    public $posts;
+    public $title,$body,;
+    public$posts;
     public $edit_mode=false;
     public $post_id;
     public function store()
@@ -45,6 +45,7 @@ class Posts extends Component
         $post=Post::find($this->post_id);
         $post->update($validated_data);
         session()->flash('alertmessageupdate','Updated Successfully');
+        $this->resetInputFields();
     }
     public function cancelUpdate()
     {

@@ -32,7 +32,7 @@
             <td>{{ $post->title }}</td>
             <td>{{ $post->body }}</td>
             <td><button wire:click="edit({{ $post->id }})" type="button" class="btn btn-outline-info">Edit</button></td>
-            <td><button wire:confirm="Do you want to delete this?" wire:click="delete({{ $post->id }})" type="button" class="btn btn-outline-danger">Delete</button></td>
+            <td><button wire:confirm="Do you want " wire:click="delete({{ $post->id }})" type="button" class="btn btn-outline-danger">Delete</button></td>
         </tr>
         @endforeach
     </table>

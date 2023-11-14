@@ -4,11 +4,11 @@
         <hr>
         <h5 class="alert-heading">Your Information Successfully Saved in Our System</h5></center></h3></div>
         @elseif(session()->has('alertmessageupdate'))
-        <div class="alert alert-info"><h3 style="color: rgb(131, 129, 129)"><center>{{ session('alertmessageupdate') }}
+        <div class="alert alert-info"><h3 style="color: rgb(116, 115, 115)"><center>{{ session('alertmessageupdate') }}
             <hr>
             <h5 class="alert-heading">Your Information Successfully updated in Our System</h5></center></h3></div>
         @elseif(session()->has('alertmessagedelete'))
-    <div class="alert alert-danger"><h3 style="color: rgb(131, 129, 129)"><center>{{ session('alertmessagedelete') }}
+    <div class="alert alert-danger"><h3 style="color: rgb(116, 115, 115)"><center>{{ session('alertmessagedelete') }}
         <hr>
         <h5 class="alert-heading">Your Information Successfully deleted from Our System</h5></center></h3></div>
     @endif
@@ -32,7 +32,7 @@
             <td>{{ $post->title }}</td>
             <td>{{ $post->body }}</td>
             <td><button wire:click="edit({{ $post->id }})" type="button" class="btn btn-outline-info">Edit</button></td>
-            <td><button wire:confirm="Do you want to delete this?" wire:click="delete({{ $post->id }})" type="button" class="btn btn-outline-danger">Delete</button></td>
+            <td><button wire:click="delete({{ $post->id }})" type="button" class="btn btn-outline-danger">Delete</button></td>
         </tr>
         @endforeach
     </table>

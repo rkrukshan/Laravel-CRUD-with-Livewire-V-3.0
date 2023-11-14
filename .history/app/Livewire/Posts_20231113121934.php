@@ -8,7 +8,7 @@ use Livewire\Component;
 class Posts extends Component
 {
     public $title,$body;
-    public $posts;
+    public$posts;
     public $edit_mode=false;
     public $post_id;
     public function store()
@@ -19,7 +19,7 @@ class Posts extends Component
         ]);
         Post::create($validated_data);
         session()->flash('alertmessage','Saved Successfully');
-        $this->resetInputFields();
+        // $this->resetInputFields();
     }
 
     private function resetInputFields()

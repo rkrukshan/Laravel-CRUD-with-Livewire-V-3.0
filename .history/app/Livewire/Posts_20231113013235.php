@@ -7,8 +7,9 @@ use Livewire\Component;
 
 class Posts extends Component
 {
+    use withPagination;
     public $title,$body;
-    public $posts;
+    public$posts;
     public $edit_mode=false;
     public $post_id;
     public function store()
@@ -59,7 +60,7 @@ class Posts extends Component
     }
     public function render()
     {
-        $this->posts=Post::all();
+        $this->posts=Post::paginate();
         return view('livewire.posts');
     }
 }

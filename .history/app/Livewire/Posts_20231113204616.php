@@ -24,7 +24,7 @@ class Posts extends Component
 
     private function resetInputFields()
     {
-        $this->title='';
+        $this->title=''; 
         $this->body='';
     }
     public function edit($id)

@@ -27,7 +27,7 @@ class Posts extends Component
         $this->title='';
         $this->body='';
     }
-    public function edit($id)
+    public function edit($id )
 
     {
         $this->edit_mode=true;
